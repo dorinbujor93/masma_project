@@ -1,0 +1,5 @@
+D:\Documente\Master2\MASMA\Lab4\Exemple\C#\Lab4Example1\Backup\Lab4Example1\bin\Debug\Lab4Example1.exe
+D:\Documente\Master2\MASMA\Lab4\Exemple\C#\Lab4Example1\Backup\Lab4Example1\bin\Debug\Lab4Example1.pdb
+D:\Documente\Master2\MASMA\Lab4\Exemple\C#\Lab4Example1\Backup\Lab4Example1\obj\Debug\Lab4Example1.csprojResolveAssemblyReference.cache
+D:\Documente\Master2\MASMA\Lab4\Exemple\C#\Lab4Example1\Backup\Lab4Example1\obj\Debug\Lab4Example1.exe
+D:\Documente\Master2\MASMA\Lab4\Exemple\C#\Lab4Example1\Backup\Lab4Example1\obj\Debug\Lab4Example1.pdb

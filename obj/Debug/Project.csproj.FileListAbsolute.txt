@@ -1,0 +1,16 @@
+D:\Documente\Master2\MASMA\Lab4\Exemple\C#\Lab4Example1\Backup\Lab4Example1\obj\Debug\Lab4Example1.exe
+D:\Documente\Master2\MASMA\Lab4\Exemple\C#\Lab4Example1\Backup\Lab4Example1\obj\Debug\Lab4Example1.pdb
+D:\Documente\Master2\MASMA\Lab4\Exemple\C#\Lab4Example1\Backup\Lab4Example1\bin\Debug\Lab4Example1.exe
+D:\Documente\Master2\MASMA\Lab4\Exemple\C#\Lab4Example1\Backup\Lab4Example1\bin\Debug\Lab4Example1.pdb
+C:\Users\Home\Desktop\MASMA\Proiect\Lab4Example1\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\Home\Desktop\MASMA\Proiect\Lab4Example1\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\MASMA\Proiect\Lab4Example1\obj\Debug\Lab4Example1.exe
+C:\Users\Home\Desktop\MASMA\Proiect\Lab4Example1\obj\Debug\Lab4Example1.pdb
+C:\Users\Home\Desktop\MASMA\Proiect\Lab4Example1\bin\Debug\Lab4Example1.exe
+C:\Users\Home\Desktop\MASMA\Proiect\Lab4Example1\bin\Debug\Lab4Example1.pdb
+D:\Facultate\MASMA\MASMA\Proiect\Lab4Example1\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\Facultate\MASMA\MASMA\Proiect\Lab4Example1\obj\Debug\Lab4Example1.exe
+D:\Facultate\MASMA\MASMA\Proiect\Lab4Example1\obj\Debug\Lab4Example1.pdb
+D:\Facultate\MASMA\MASMA\Proiect\Lab4Example1\bin\Debug\Lab4Example1.exe
+D:\Facultate\MASMA\MASMA\Proiect\Lab4Example1\bin\Debug\Lab4Example1.pdb
+D:\Facultate\MASMA\MASMA\Proiect\Lab4Example1\obj\Debug\Project.csprojResolveAssemblyReference.cache
