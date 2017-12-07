@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Lab4Example1
+namespace Project_MASMA
 {
     public static class MatrixGenerator
     {

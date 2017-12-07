@@ -5,7 +5,7 @@ using System.Text;
 using jade.core.behaviours;
 using jade.lang.acl;
 
-namespace Lab4Example1
+namespace Project_MASMA
 {
     class DispatcherAgentSend:CyclicBehaviour
     {

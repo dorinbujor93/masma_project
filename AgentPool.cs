@@ -8,7 +8,7 @@ using jade.domain.FIPAAgentManagement;
 using jade.wrapper;
 using AgentContainer = jade.wrapper.AgentContainer;
 
-namespace Lab4Example1
+namespace Project_MASMA
 {
     public class AgentPool
     {

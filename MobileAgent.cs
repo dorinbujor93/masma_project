@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using jade.core;
 
-namespace Lab4Example1 
+namespace Project_MASMA 
 {
     class MobileAgent : Agent
     {

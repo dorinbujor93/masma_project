@@ -6,7 +6,7 @@ using jade.core;
 using jade.wrapper;
 using jade.lang.acl;
 
-namespace Lab4Example1
+namespace Project_MASMA
 {
     class DistributorAgent:Agent
     {
@@ -50,13 +50,13 @@ namespace Lab4Example1
             String index;
 
             dispCont = JadeHelper.CreateContainer("DispatcherContainer", false, "localhost", null, "1150");
-            dispAgent = JadeHelper.CreateAgent(dispCont, "DispatcherAgent", "Lab4Example1.DispatcherAgent", null);
+            dispAgent = JadeHelper.CreateAgent(dispCont, "DispatcherAgent", "Project_MASMA.DispatcherAgent", null);
 
             for (int i = 0; i < Constants.ProcessorNumber; i++)
             {
                 index = (i < 9) ? "0" + i : i.ToString();
                 procCont.Add(JadeHelper.CreateContainer("container" + i, false, "localhost", null, "11" + index));
-                procAgents.Add(JadeHelper.CreateAgent(procCont[i], "ProcessorAgent" + i, "Lab4Example1.ProcessorAgent", null));
+                procAgents.Add(JadeHelper.CreateAgent(procCont[i], "ProcessorAgent" + i, "Project_MASMA.ProcessorAgent", null));
             }
             dispAgent.start();
             for (int i = 0; i < Constants.ProcessorNumber; i++)

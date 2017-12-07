@@ -69,7 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgentPool.cs" />
-    <Compile Include="CloningAgent.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="DispatcherAgent.cs" />
     <Compile Include="DispatcherAgentRecieve.cs" />

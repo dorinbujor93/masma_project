@@ -5,7 +5,7 @@ using System.Text;
 using jade.core;
 using jade.wrapper;
 
-namespace Lab4Example1
+namespace Project_MASMA
 {
     class HelperAgent:Agent
     {

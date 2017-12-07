@@ -5,7 +5,7 @@ using System.Text;
 using jade.core;
 using jade.wrapper;
 
-namespace Lab4Example1
+namespace Project_MASMA
 {
 
     public struct Disp
@@ -58,7 +58,7 @@ namespace Lab4Example1
             {
                 index = (i < 9) ? "0" + i : i.ToString();
                 helperContainers.Add(JadeHelper.CreateContainer("container" + i, false, "localhost", null, "14" + index));
-                helperAgents.Add(JadeHelper.CreateAgent(helperContainers[i], "HelperAgent" + i + processorAgentId.getLocalName(), "Lab4Example1.HelperAgent", null));
+                helperAgents.Add(JadeHelper.CreateAgent(helperContainers[i], "HelperAgent" + i + processorAgentId.getLocalName(), "Project_MASMA.HelperAgent", null));
             }
 
             for (int i = 0; i < number; i++)
