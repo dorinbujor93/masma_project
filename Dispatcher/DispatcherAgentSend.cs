@@ -27,8 +27,6 @@ namespace Project_MASMA
                 dispAgent.messagesToSend.Remove(dispAgent.messagesToSend.First().Key);
                 dispAgent.send(messageToSend);
             }
-
-
         }
     }
 }

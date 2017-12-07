@@ -21,7 +21,6 @@ namespace Project_MASMA
 
     public class DispatcherAgent:Agent
     {
-        int avaliableAgents = 0;
         public Dictionary<AID, string> messagesToSend = new Dictionary<AID, string>();
         List<jade.wrapper.AgentController> helperAgents = new List<jade.wrapper.AgentController>();
         List<jade.wrapper.AgentContainer> helperContainers = new List<jade.wrapper.AgentContainer>();

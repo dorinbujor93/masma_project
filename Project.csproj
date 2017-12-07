@@ -68,20 +68,19 @@
     <Reference Include="vjslib" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgentPool.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="DispatcherAgent.cs" />
-    <Compile Include="DispatcherAgentRecieve.cs" />
-    <Compile Include="DispatcherAgentSend.cs" />
-    <Compile Include="DistributorAgent.cs" />
-    <Compile Include="DistributorAgentReceive.cs" />
-    <Compile Include="HelperAgent.cs" />
-    <Compile Include="HelperAgentRecieve.cs" />
-    <Compile Include="HelperAgentSend.cs" />
+    <Compile Include="Dispatcher\DispatcherAgent.cs" />
+    <Compile Include="Dispatcher\DispatcherAgentRecieve.cs" />
+    <Compile Include="Dispatcher\DispatcherAgentSend.cs" />
+    <Compile Include="Distributor\DistributorAgent.cs" />
+    <Compile Include="Distributor\DistributorAgentReceive.cs" />
+    <Compile Include="Helper\HelperAgent.cs" />
+    <Compile Include="Helper\HelperAgentRecieve.cs" />
+    <Compile Include="Helper\HelperAgentSend.cs" />
     <Compile Include="JadeHelper.cs" />
-    <Compile Include="ProcessorAgent.cs" />
-    <Compile Include="ProcessorAgentRecieve.cs" />
-    <Compile Include="ProcessorAgentSend.cs" />
+    <Compile Include="Processor\ProcessorAgent.cs" />
+    <Compile Include="Processor\ProcessorAgentRecieve.cs" />
+    <Compile Include="Processor\ProcessorAgentSend.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
