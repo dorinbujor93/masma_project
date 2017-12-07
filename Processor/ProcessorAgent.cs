@@ -19,7 +19,6 @@ namespace Project_MASMA
 
         public override void setup()
         {
-            //Console.WriteLine("Processor agent with AID:{0} started...", getAID().getName());
             Constants.aids.Add(getAID());
             addBehaviour(new ProcessorAgentRecieve(this));
             addBehaviour(new ProcessorAgentSend(this));
@@ -50,7 +49,6 @@ namespace Project_MASMA
             {
                 CalculateSum(matrix1Array, matrix2Array);
             }
-            //Console.WriteLine(length);
         }
 
 

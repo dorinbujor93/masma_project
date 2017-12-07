@@ -8,10 +8,10 @@ namespace Project_MASMA
 {
     public static class Constants
     {
-        public const int ProcessorCapacity = 10000;
-        public const int HelperCapacity = 5000;
-        public const int ProcessorNumber = 50;
-        public const int MatrixSize = 100;
+        public const int ProcessorCapacity = 20;
+        public const int HelperCapacity = 5;
+        public const int ProcessorNumber = 10;
+        public const int MatrixSize = 20;
 
         public static List<AID> aids = new List<AID>();
         public static Dictionary<string, int> helpersNeeded = new Dictionary<string, int>();

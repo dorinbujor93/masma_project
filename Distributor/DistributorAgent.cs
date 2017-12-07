@@ -15,8 +15,8 @@ namespace Project_MASMA
         List<jade.wrapper.AgentContainer> procCont = new List<jade.wrapper.AgentContainer>();
         List<jade.wrapper.AgentController> procAgents = new List<AgentController>();
         public Dictionary<string, string> processorsResults = new Dictionary<string, string>();
-        int[,] matrix1 = new int[1000, 1000];
-        int[,] matrix2 = new int[1000, 1000];
+        int[,] matrix1 = new int[Constants.MatrixSize, Constants.MatrixSize];
+        int[,] matrix2 = new int[Constants.MatrixSize, Constants.MatrixSize];
         List<int> bounds = new List<int>();
         public string finalResult = String.Empty;
 
@@ -25,12 +25,12 @@ namespace Project_MASMA
         public override void setup()
         {
             Constants.distrAid = this.getAID();
-            for(int i = 0; i < 1000; i++)
+            for(int i = 0; i < Constants.MatrixSize; i++)
             {
-                for(int j=0;j<1000;j++)
+                for(int j=0;j< Constants.MatrixSize; j++)
                 {
-                    matrix1[i, j] = rnd.Next(1, 10);
-                    matrix2[i, j] = rnd.Next(1, 10);
+                    matrix1[i, j] = rnd.Next(1, 4);
+                    matrix2[i, j] = rnd.Next(1, 4);
                 }
             }
             addBehaviour(new DistributorAgentReceive(this));
@@ -103,8 +103,8 @@ namespace Project_MASMA
             String content2 = "SecondSubset ";
             for (int index = startIndex; index < lastIndex; index++)
             {
-                content1 += matrix1[(index / 1000), index % 1000] + " ";
-                content2 += matrix2[(index / 1000), index % 1000] + " ";
+                content1 += matrix1[(index / Constants.MatrixSize), index % Constants.MatrixSize] + " ";
+                content2 += matrix2[(index / Constants.MatrixSize), index % Constants.MatrixSize] + " ";
             }
 
             toSendFirstArray.setContent(content1);
@@ -129,6 +129,8 @@ namespace Project_MASMA
                 }
             }
             Console.WriteLine(finalResult);
+            var result = finalResult.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            Console.WriteLine(result.Count());
         }
     }
 }
