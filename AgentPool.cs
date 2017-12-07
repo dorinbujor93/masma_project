@@ -19,8 +19,6 @@ namespace Project_MASMA
 
             while (!found)
             {
-
-
                 // search for a provider
                 DFAgentDescription template = new DFAgentDescription();
                 ServiceDescription sd = new ServiceDescription();
@@ -37,7 +35,6 @@ namespace Project_MASMA
 
             return providerAID;
         }
-
 
         // Registers a service on behalf of an agent
         public static void RegisterService(string serviceName, Agent myAgent)

@@ -25,7 +25,6 @@ namespace Project_MASMA
         public override void setup()
         {
             Constants.distrAid = this.getAID();
-            //Console.WriteLine("Distributor agent with AID:{0} started...", getAID().getName());
             for(int i = 0; i < 1000; i++)
             {
                 for(int j=0;j<1000;j++)
@@ -130,7 +129,6 @@ namespace Project_MASMA
                 }
             }
             Console.WriteLine(finalResult);
-            Console.WriteLine("In sfarsit!!!");
         }
     }
 }

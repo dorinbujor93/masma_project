@@ -9,13 +9,10 @@ namespace Project_MASMA
 {
     class HelperAgent:Agent
     {
-
         public Dictionary<AID, string> messageForProc = new Dictionary<AID, string>();
 
         public override void setup()
         {
-            //Console.WriteLine("Helper Agent with AID:{0} started...", getAID().getName());
-            //Constants.aids.Add(getAID());
             addBehaviour(new HelperAgentRecieve(this));
             addBehaviour(new HelperAgentSend(this));
         }
@@ -37,7 +34,6 @@ namespace Project_MASMA
             {
                 summedMatrix += " " + (Convert.ToInt32(matrixElements1[i]) + Convert.ToInt32(matrixElements2[i])).ToString();
             }
-
             return summedMatrix;
         }
     }

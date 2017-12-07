@@ -22,7 +22,6 @@ namespace Project_MASMA
             if (dispAgent.messagesToSend.Count > 0)
             {
                 ACLMessage messageToSend = new ACLMessage(ACLMessage.REQUEST);
-
                 messageToSend.setContent(dispAgent.messagesToSend.First().Value);
                 messageToSend.addReceiver(dispAgent.messagesToSend.First().Key);
                 dispAgent.messagesToSend.Remove(dispAgent.messagesToSend.First().Key);

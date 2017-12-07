@@ -27,7 +27,6 @@ namespace Project_MASMA
         List<jade.wrapper.AgentContainer> helperContainers = new List<jade.wrapper.AgentContainer>();
         public override void setup()
         {
-            //Console.WriteLine("Dispatcher agent with AID:{0} started...", getAID().getName());
             Constants.dispAid = getAID();
             addBehaviour(new DispatcherAgentRecieve(this));
             addBehaviour(new DispatcherAgentSend(this));
@@ -102,7 +101,5 @@ namespace Project_MASMA
 
             return firstMatrix + "|" + secondMatrix;
         }
-
-        //Trebuie de creat HelperAgent si de pus id-urile la helperi si aid-urile la tatii lor.
     }
 }

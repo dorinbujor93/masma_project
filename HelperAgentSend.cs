@@ -22,7 +22,6 @@ namespace Project_MASMA
             if ( helpAgent.messageForProc.Count() > 0)
             {
                 ACLMessage messageToSend = new ACLMessage(ACLMessage.REQUEST);
-
                 messageToSend.setContent(helpAgent.messageForProc.First().Value);
                 messageToSend.addReceiver(helpAgent.messageForProc.First().Key);
                 helpAgent.messageForProc.Remove(helpAgent.messageForProc.First().Key);

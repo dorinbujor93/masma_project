@@ -14,7 +14,6 @@ namespace Project_MASMA
             Profile p = new ProfileImpl();
             String index = String.Empty;
             Runtime rt = Runtime.instance();
-            int[,] matrix = MatrixGenerator.GetMatrix();
 
             jade.wrapper.AgentContainer distrCont = JadeHelper.CreateContainer("DistributorContainer", true, "localhost", "", "1153");
             AgentController distrAgent = JadeHelper.CreateAgent(distrCont, "DistributorAgent", "Project_MASMA.DistributorAgent", null);

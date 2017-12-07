@@ -79,8 +79,6 @@
     <Compile Include="HelperAgentRecieve.cs" />
     <Compile Include="HelperAgentSend.cs" />
     <Compile Include="JadeHelper.cs" />
-    <Compile Include="MatrixGenerator.cs" />
-    <Compile Include="MobileAgent.cs" />
     <Compile Include="ProcessorAgent.cs" />
     <Compile Include="ProcessorAgentRecieve.cs" />
     <Compile Include="ProcessorAgentSend.cs" />

@@ -25,7 +25,6 @@ namespace Project_MASMA
             if (message != null && !incoming.Contains(message.getSender()))
             {
                 incoming.Add(message.getSender());
-                //Console.WriteLine("*****************************" + message.getSender() + message.getContent());
                 dispAgent.ProcessData(message.getContent(), message.getSender());
             }
             else

@@ -26,7 +26,6 @@ namespace Project_MASMA
             if (message != null )
             {
                 incoming.Add(message.getSender());
-                //Console.WriteLine("*****************************" + message.getSender() + message.getContent());
                 helperAgent.ProcessData(message.getContent(), message.getSender());
             }
             else

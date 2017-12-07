@@ -13,8 +13,6 @@ namespace Project_MASMA
         private ProcessorAgent procAgent;
         List<string> incoming = new List<string>();
 
-
-
         public ProcessorAgentRecieve(ProcessorAgent a)
             :base(a)
         {
@@ -41,7 +39,6 @@ namespace Project_MASMA
                         }
                     }
                     var result = message.getContent().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
-                    //Console.WriteLine(result[0] + procAgent.getAID().getName());
                 }
                 else if(message.getSender().getName().Contains("HelperAgent"))
                 {

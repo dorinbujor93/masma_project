@@ -13,8 +13,6 @@ namespace Project_MASMA
         private DistributorAgent distrAgent;
         List<string> incoming = new List<string>();
 
-
-
         public DistributorAgentReceive(DistributorAgent a)
             : base(a)
         {
@@ -31,10 +29,6 @@ namespace Project_MASMA
                     distrAgent.processorsResults[message.getSender().getName()] = message.getContent();
                     distrAgent.JoinFinalResults();
                 }
-                /*if (distrAgent.processorsResults.Count == Constants.ProcessorNumber)
-                {
-                    distrAgent.JoinFinalResults();
-                }*/
             }
             else
             {
