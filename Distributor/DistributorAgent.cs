@@ -88,10 +88,12 @@ namespace Project_MASMA
 
             Send(0, bounds[0], Constants.aids[0]);
 
-            for (int i = 1;i<Constants.ProcessorNumber; i++)
+            for (int i = 1;i<Constants.ProcessorNumber - 1; i++)
             {
                 Send(bounds[i - 1], bounds[i], Constants.aids[i]);
             }
+
+            Send(Constants.ProcessorNumber - 1, size * size, Constants.aids[Constants.ProcessorNumber - 1]);
         }
 
         void Send(int startIndex, int lastIndex,AID agentId)
@@ -118,19 +120,25 @@ namespace Project_MASMA
 
         public void JoinFinalResults()
         {
-            for (int i = 0; i < Constants.ProcessorNumber; i++)
+            if (processorsResults.Count == Constants.ProcessorNumber - 2)
             {
-                foreach (var element in processorsResults)
+                for (int i = 0; i < Constants.ProcessorNumber; i++)
                 {
-                    if (element.Key.Contains("ProcessorAgent" + i))
+                    foreach (var element in processorsResults)
                     {
-                        finalResult += element.Value + " ";
+                        if (element.Key.Contains("ProcessorAgent" + i))
+                        {
+                            finalResult += element.Value + " ";
+                        }
                     }
                 }
             }
             Console.WriteLine(finalResult);
             var result = finalResult.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
-            Console.WriteLine(result.Count());
+            if (result.Length != 0)
+            {
+                Console.WriteLine(result.Count());
+            }
         }
     }
 }

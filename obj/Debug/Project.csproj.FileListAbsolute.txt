@@ -19,3 +19,8 @@ D:\Facultate\prj\Project_MASMA\bin\Debug\Lab4Example1.pdb
 D:\Facultate\prj\Project_MASMA\obj\Debug\Project.csproj.CoreCompileInputs.cache
 D:\Facultate\prj\Project_MASMA\obj\Debug\Lab4Example1.exe
 D:\Facultate\prj\Project_MASMA\obj\Debug\Lab4Example1.pdb
+D:\Documente\Master2\MASMA\masma_project-master\obj\Debug\Lab4Example1.exe
+D:\Documente\Master2\MASMA\masma_project-master\obj\Debug\Lab4Example1.pdb
+D:\Documente\Master2\MASMA\masma_project-master\bin\Debug\Lab4Example1.exe
+D:\Documente\Master2\MASMA\masma_project-master\bin\Debug\Lab4Example1.pdb
+D:\Documente\Master2\MASMA\masma_project-master\obj\Debug\Project.csprojResolveAssemblyReference.cache
