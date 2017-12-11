@@ -10,7 +10,6 @@ namespace Project_MASMA
     class ProcessorAgentSend : CyclicBehaviour
     {
         private ProcessorAgent procAgent;
-        private bool dataSent = false;
 
         public ProcessorAgentSend(ProcessorAgent a)
             :base(a)
@@ -39,10 +38,10 @@ namespace Project_MASMA
 
             }
             if(Constants.helpersNeeded.ContainsKey(procAgent.getName()) && Constants.helpersNeeded[procAgent.getName()] == procAgent.helpersResults.Count() 
-                && String.IsNullOrEmpty(procAgent.processorResult) == false && !dataSent)
+                && String.IsNullOrEmpty(procAgent.processorResult) == false && !procAgent.messageSent)
             {
                 procAgent.JoinResults();
-                dataSent = true;
+                procAgent.messageSent = true;
                 ACLMessage messageToSend = new ACLMessage(ACLMessage.REQUEST);
                 messageToSend.setContent(procAgent.messageForDistributor);
                 messageToSend.addReceiver(Constants.distrAid);

@@ -10,7 +10,7 @@ namespace Project_MASMA
     class HelperAgent:Agent
     {
         public Dictionary<AID, string> messageForProc = new Dictionary<AID, string>();
-
+        public bool messageSent = false;
         public override void setup()
         {
             addBehaviour(new HelperAgentRecieve(this));

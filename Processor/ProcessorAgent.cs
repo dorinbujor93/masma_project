@@ -16,6 +16,7 @@ namespace Project_MASMA
         public string helpersSum = String.Empty;
         public Dictionary<string, string> helpersResults = new Dictionary<string, string>();
         public string messageForDistributor = String.Empty;
+        public bool messageSent = false;
 
         public override void setup()
         {
