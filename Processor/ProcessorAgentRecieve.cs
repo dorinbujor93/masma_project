@@ -42,7 +42,7 @@ namespace Project_MASMA
                 }
                 else if(message.getSender().getName().Contains("HelperAgent"))
                 {
-                    procAgent.helpersResults[message.getSender().getName()] = message.getContent();   
+                    procAgent.helpersResults[message.getSender().getName()] = message.getContent();
                 }
             }
             else

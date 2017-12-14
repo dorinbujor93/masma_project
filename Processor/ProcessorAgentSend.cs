@@ -35,12 +35,14 @@ namespace Project_MASMA
                 messageToSend.setContent(content1);
                 messageToSend.addReceiver(Constants.dispAid);
                 procAgent.send(messageToSend);
+               // procAgent.needHelp = false;
 
             }
-            if(Constants.helpersNeeded.ContainsKey(procAgent.getName()) && Constants.helpersNeeded[procAgent.getName()] == procAgent.helpersResults.Count() 
+            if (Constants.helpersNeeded.ContainsKey(procAgent.getName()) && Constants.helpersNeeded[procAgent.getName()] == procAgent.helpersResults.Count()
                 && String.IsNullOrEmpty(procAgent.processorResult) == false && !procAgent.messageSent)
             {
                 procAgent.JoinResults();
+
                 procAgent.messageSent = true;
                 ACLMessage messageToSend = new ACLMessage(ACLMessage.REQUEST);
                 messageToSend.setContent(procAgent.messageForDistributor);

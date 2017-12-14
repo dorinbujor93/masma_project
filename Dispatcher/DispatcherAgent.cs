@@ -33,15 +33,13 @@ namespace Project_MASMA
 
         public void ProcessData(string message, AID processorAgentId)
         {
- 
-
             var arrays = message.Split(new string[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
             var array1 = arrays[0].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
             var array2 = arrays[1].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
             var necessaryNrOfHelpers = array1.Count() / Constants.HelperCapacity;
-            Constants.helpersNeeded[processorAgentId.getName()] = necessaryNrOfHelpers;
             necessaryNrOfHelpers = (array1.Count() % Constants.HelperCapacity != 0) ? necessaryNrOfHelpers + 1 : necessaryNrOfHelpers;
+            Constants.helpersNeeded[processorAgentId.getName()] = necessaryNrOfHelpers;
 
             GenerateHelperAgents(processorAgentId, necessaryNrOfHelpers);
 
@@ -58,12 +56,11 @@ namespace Project_MASMA
                 helperContainers.Add(JadeHelper.CreateContainer("container" + i, false, "localhost", null, "14" + index));
                 helperAgents.Add(JadeHelper.CreateAgent(helperContainers[i], "HelperAgent" + i + processorAgentId.getLocalName(), "Project_MASMA.HelperAgent", null));
             }
-
             for (int i = 0; i < number; i++)
             {
                 helperContainers[i].start();
                 helperAgents[i].start();
-            }
+            }        
         }
 
         public void GenerateDataForHelperAgents(List<string> array1, List<string> array2, int nrNeccessaryNrOfHelp, AID processorAgentId)
