@@ -10,6 +10,7 @@ namespace Project_MASMA
 {
     class DistributorAgent:Agent
     {
+        System.IO.StreamWriter file; 
         jade.wrapper.AgentContainer dispCont;
         AgentController dispAgent;
         List<jade.wrapper.AgentContainer> procCont = new List<jade.wrapper.AgentContainer>();
@@ -17,6 +18,7 @@ namespace Project_MASMA
         public Dictionary<string, string> processorsResults = new Dictionary<string, string>();
         int[,] matrix1 = new int[Constants.MatrixSize, Constants.MatrixSize];
         int[,] matrix2 = new int[Constants.MatrixSize, Constants.MatrixSize];
+        int[,] resultMatrix = new int[Constants.MatrixSize, Constants.MatrixSize];
         List<int> bounds = new List<int>();
         public string finalResult = String.Empty;
 
@@ -24,6 +26,8 @@ namespace Project_MASMA
 
         public override void setup()
         {
+            System.IO.File.WriteAllText("result.txt", String.Empty);
+            file = new System.IO.StreamWriter("result.txt");
             Constants.distrAid = this.getAID();
             for(int i = 0; i < Constants.MatrixSize; i++)
             {
@@ -31,10 +35,22 @@ namespace Project_MASMA
                 {
                     matrix1[i, j] = rnd.Next(1, 4);
                     matrix2[i, j] = rnd.Next(1, 4);
+                    file.Write(matrix1[i, j] + " ");
                 }
+                file.WriteLine();
             }
+            file.WriteLine("***************************************************************************************");
+            for (int i = 0; i < Constants.MatrixSize; i++)
+            {
+                for (int j = 0; j < Constants.MatrixSize; j++)
+                {
+                    file.Write(matrix2[i, j] + " ");
+                }
+                file.WriteLine();
+            }
+            file.WriteLine("-----------------------------------------------Result------------------------------------");
+            file.Close();
             addBehaviour(new DistributorAgentReceive(this));
-
             Calculate();
         }
 
@@ -120,24 +136,32 @@ namespace Project_MASMA
 
         public void JoinFinalResults()
         {
-            if (processorsResults.Count == Constants.ProcessorNumber - 2)
+            if (processorsResults.Count == Constants.ProcessorNumber)
             {
                 for (int i = 0; i < Constants.ProcessorNumber; i++)
                 {
-                    foreach (var element in processorsResults)
+                    if (processorsResults.ContainsKey("ProcessorAgent" + i + "@192.168.1.116:1153/JADE"))
                     {
-                        if (element.Key.Contains("ProcessorAgent" + i))
-                        {
-                            finalResult += element.Value + " ";
-                        }
-                    }
+                        finalResult += processorsResults["ProcessorAgent" + i + "@192.168.1.116:1153/JADE"] + " ";
+                    }       
                 }
             }
-            Console.WriteLine(finalResult);
             var result = finalResult.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
-            if (result.Length != 0)
+            if(result.Length > 0)
             {
-                Console.WriteLine(result.Count());
+                file = new System.IO.StreamWriter("result.txt");
+            }
+            for (int i = 0; i < result.Length; i++)
+            {
+                file.Write(result[i]);
+                if(i%20 == 0)
+                {
+                    file.WriteLine();
+                }
+            }
+            if (result.Length > 0)
+            {
+                file.Close();
             }
         }
     }

@@ -10,8 +10,6 @@ namespace Project_MASMA
     class HelperAgentSend : CyclicBehaviour
     {
         private HelperAgent helpAgent;
-        private bool messageSent = false;
-
         public HelperAgentSend(HelperAgent a)
             :base(a)
         {
@@ -20,7 +18,7 @@ namespace Project_MASMA
 
         public override void action()
         {
-            if (helpAgent.messageForProc.Count() > 0 && !helpAgent.messageSent)
+            if (helpAgent.messageForProc.Count() > 0) //&& !helpAgent.messageSent)
             {
                 helpAgent.messageSent = true;
                 ACLMessage messageToSend = new ACLMessage(ACLMessage.REQUEST);
@@ -29,8 +27,6 @@ namespace Project_MASMA
                 helpAgent.messageForProc.Remove(helpAgent.messageForProc.First().Key);
                 helpAgent.send(messageToSend);
             }
-
-
         }
     }
 }

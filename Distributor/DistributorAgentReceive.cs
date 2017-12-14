@@ -26,7 +26,6 @@ namespace Project_MASMA
             {
                if (message.getSender().getName().Contains("ProcessorAgent"))
                 {
-                    Console.WriteLine("**********************************" + message.getSender().getName() + "**************************");
                     distrAgent.processorsResults[message.getSender().getName()] = message.getContent();
                     distrAgent.JoinFinalResults();
                 }

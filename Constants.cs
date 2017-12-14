@@ -9,7 +9,7 @@ namespace Project_MASMA
     public static class Constants
     {
         public const int ProcessorCapacity = 20;
-        public const int HelperCapacity = 5;
+        public const int HelperCapacity = 10;
         public const int ProcessorNumber = 10;
         public const int MatrixSize = 20;
 

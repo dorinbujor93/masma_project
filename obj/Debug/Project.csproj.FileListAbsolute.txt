@@ -24,3 +24,12 @@ D:\Documente\Master2\MASMA\masma_project-master\obj\Debug\Lab4Example1.pdb
 D:\Documente\Master2\MASMA\masma_project-master\bin\Debug\Lab4Example1.exe
 D:\Documente\Master2\MASMA\masma_project-master\bin\Debug\Lab4Example1.pdb
 D:\Documente\Master2\MASMA\masma_project-master\obj\Debug\Project.csprojResolveAssemblyReference.cache
+D:\Documente\Master2\Project\masma_project\obj\Debug\Lab4Example1.exe
+D:\Documente\Master2\Project\masma_project\obj\Debug\Lab4Example1.pdb
+D:\Documente\Master2\Project\masma_project\bin\Debug\Lab4Example1.exe
+D:\Documente\Master2\Project\masma_project\bin\Debug\Lab4Example1.pdb
+D:\Documente\Master2\Project\masma_project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+D:\Documente\Master2\Backup\Project\masma_project\obj\Debug\Lab4Example1.exe
+D:\Documente\Master2\Backup\Project\masma_project\obj\Debug\Lab4Example1.pdb
+D:\Documente\Master2\Backup\Project\masma_project\bin\Debug\Lab4Example1.exe
+D:\Documente\Master2\Backup\Project\masma_project\bin\Debug\Lab4Example1.pdb
